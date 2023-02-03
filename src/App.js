@@ -33,6 +33,7 @@ class App extends React.Component {
           <form onSubmit = {this.handleSubmit}>
             <input
               type = "text"
+              placeholder='Ingrese una nueva tarea'
               value = {this.state.newTodo}
               onChange = {this.handleChange}
               />
@@ -48,13 +49,12 @@ class App extends React.Component {
   }
 
   handleSubmit = event => {
-    event.preventDefault();
-    this.setState( prevState => ({
-      todos: [],
-      newTodo: '',
-    }));
-  }
-  
+     event.preventDefault();
+     this.setState( p => ({
+       todos: [...p.todos, {id: Date.now(), text: p.newTodo}],
+       newTodo: '',
+     }));
+   }
 }
 
 export default App;
