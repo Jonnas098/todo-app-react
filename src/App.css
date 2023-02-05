@@ -37,7 +37,12 @@
   }
 }
 
+.formStyle{
+  padding: 2em 0;
+}
+
 .todoList{
+  user-select: none;
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -45,10 +50,12 @@
 }
 
 .todoStyle{
+  margin: 0 1em;
   text-align: start;
 }
 
 .todoStyleChecked{
+  margin: 0 1em;
   text-align: start;
   text-decoration: line-through;
 }

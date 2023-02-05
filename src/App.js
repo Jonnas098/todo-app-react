@@ -29,7 +29,7 @@ class App extends React.Component {
             })}
           </ul>
           <img src={logo} className="App-logo" alt="logo" />
-          <form onSubmit = {this.handleSubmit}>
+          <form className='formStyle' onSubmit = {this.handleSubmit}>
             <input
               className='inputStyle'
               type = "text"
