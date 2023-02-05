@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.todoList{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em 0;
+}
+
+.todoStyle{
+  text-align: start;
+}
+
+.todoStyleChecked{
+  text-align: start;
+  text-decoration: line-through;
+}
+
+.inputStyle{
+  border: none;
+  background-color: #282c34;
+  border-bottom: 1px solid #ffff;
+  padding: 2em;
+  color: #ffff;
+}
