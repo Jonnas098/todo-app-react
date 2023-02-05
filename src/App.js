@@ -16,12 +16,11 @@ class App extends React.Component {
       newTodo: '',
   };
 }
-
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>TODO</h1>
+          <h1>TODO App</h1>
           <ul>
             {this.state.todos.map((todo) => {
               return(
@@ -32,6 +31,7 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           <form onSubmit = {this.handleSubmit}>
             <input
+              className='inputStyle'
               type = "text"
               placeholder='Ingrese una nueva tarea'
               value = {this.state.newTodo}
