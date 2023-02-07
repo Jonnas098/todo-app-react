@@ -13,7 +13,6 @@ handleToggleClick(){
         checked: !prevState.checked
     }));
 }
-
     render() {
         return(
             <div className="todoList">
