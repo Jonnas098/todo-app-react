@@ -2,8 +2,8 @@ import React from "react";
 import '../App.css';
 
 class TodoItem extends React.Component {
-constructor(){
-    super();
+constructor(props){
+    super(props);
     this.state = {checked: false}
     this.handleToggleClick = this.handleToggleClick.bind(this)
 }
@@ -13,6 +13,7 @@ handleToggleClick(){
         checked: !prevState.checked
     }));
 }
+
     render() {
         return(
             <div className="todoList">
@@ -20,7 +21,7 @@ handleToggleClick(){
                     onChange={this.handleToggleClick}
                     type={"checkbox"}>
                 </input>
-                {this.state.checked ? <li className="todoStyleChecked">{this.props.text}</li> : <li className="todoStyle"> {this.props.text} </li> }
+                {this.state.checked ? <li className="todoStyleChecked">{this.props.text}</li> : <li className="todoStyle"> {this.props.text} </li>}
             </div>
         );
     }
