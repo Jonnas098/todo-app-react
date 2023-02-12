@@ -2,8 +2,8 @@ import React from "react";
 import '../App.css';
 
 class TodoItem extends React.Component {
-constructor(props){
-    super(props);
+constructor(){
+    super();
     this.state = {checked: false}
     this.handleToggleClick = this.handleToggleClick.bind(this)
 }

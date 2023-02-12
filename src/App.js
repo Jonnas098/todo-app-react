@@ -30,7 +30,7 @@ class App extends React.Component {
               value={this.state.newTodo}
               onChange={this.handleChange}
             />
-            <button className="circle" type="submit">Add Task</button>
+            <button type="submit">Add Task</button>
           </form>
           <ul>
             {this.state.todos.map((todo) => {
