@@ -18,7 +18,7 @@
 .showcase {
   margin: 2% 0;
   width: 27%;
-  height: 15vh;
+  height: 35vh;
   position: relative;
 }
 
@@ -65,8 +65,17 @@
   }
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
 .formStyle{
+  display: flex;
   padding: 2em 0;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .todoList{
@@ -86,6 +95,8 @@
 .list {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .todoStyleChecked{
@@ -100,4 +111,12 @@
   border-bottom: 1px solid #ffff;
   padding: 1em;
   color: #ffff;
+}
+
+button {
+  width: 6em;
+height: 3em;
+border: aliceblue 1px solid;
+background-color: #000;
+color: #fff;
 }
