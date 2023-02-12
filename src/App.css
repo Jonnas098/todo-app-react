@@ -15,6 +15,9 @@
   }
 }
 
+ul{
+  display: contents;
+}
 .showcase {
   margin: 2% 0;
   width: 27%;
