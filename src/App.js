@@ -24,6 +24,7 @@ class App extends React.Component {
             <img src={imgtest} alt="testimg"></img>
             <h1 className="title">TODO APP</h1>
           </section>
+          <div className="container">
           <form className="formStyle" onSubmit={this.handleSubmit}>
             <input
               className="inputStyle"
@@ -32,7 +33,7 @@ class App extends React.Component {
               value={this.state.newTodo}
               onChange={this.handleChange}
             />
-            <button type="submit">Add TODO</button>
+            <button className="circle" type="submit">Add Task</button>
           </form>
           <ul>
             {this.state.todos.map((todo) => {
@@ -44,6 +45,7 @@ class App extends React.Component {
               );
             })}
           </ul>
+          </div>
         </header>
       </div>
     );

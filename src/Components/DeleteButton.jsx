@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.css";
 
 class DeleteButton extends React.Component {
     handleDelete = () => {
@@ -7,7 +8,7 @@ class DeleteButton extends React.Component {
     }
 
     render(){
-        return <button onClick={this.handleDelete}>Delete</button>;
+        return <button className="main-button" onClick={this.handleDelete}>Delete</button>;
     }
 }
 
