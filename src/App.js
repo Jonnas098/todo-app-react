@@ -49,6 +49,25 @@ class App extends React.Component {
     );
   }
 
+  //Local Storage functions
+  componentDidMount() {
+    this.loadTodosFromLocalStorage();
+  }
+
+  componentDidUpdate() {
+    this.saveTodosToLocalStorage();
+  }
+
+  loadTodosFromLocalStorage() {
+    const todos = JSON.parse(localStorage.getItem('todos') || '[]');
+    this.setState({ todos });
+  }
+
+  saveTodosToLocalStorage() {
+    localStorage.setItem('todos', JSON.stringify(this.state.todos));
+  }
+
+//Add task functions
   handleChange = (event) => {
     this.setState({ newTodo: event.target.value });
   };
@@ -58,7 +77,7 @@ class App extends React.Component {
     this.setState((p) => ({
       todos: [...p.todos, { id: Date.now(), text: p.newTodo }],
       newTodo: "",
-    }));
+    }))
   };
 
   handleDelete = (todoId) => {
