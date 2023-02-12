@@ -8,11 +8,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      todos: [
-        { id: 1, text: "Estudiar" },
-        { id: 2, text: "Practicar" },
-        { id: 3, text: "Descansar" },
-      ],
+      todos: [],
       newTodo: "",
     };
   }
