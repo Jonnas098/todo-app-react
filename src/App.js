@@ -3,6 +3,7 @@ import "./App.css";
 import TodoItem from "./Components/TodoItem";
 import DeleteButton from "./Components/DeleteButton";
 import imgtest from "./assets/index.jpg";
+import Footer from "./Components/Footer";
 
 class App extends React.Component {
   constructor() {
@@ -25,7 +26,7 @@ class App extends React.Component {
             <input
               className="inputStyle"
               type="text"
-              placeholder="Ingrese una nueva tarea"
+              placeholder="Enter a new task"
               value={this.state.newTodo}
               onChange={this.handleChange}
             />
@@ -43,6 +44,7 @@ class App extends React.Component {
           </ul>
           </div>
         </header>
+        <Footer/>
       </div>
     );
   }

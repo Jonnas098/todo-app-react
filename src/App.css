@@ -19,15 +19,14 @@ ul{
   display: contents;
 }
 .showcase {
-  margin: 2% 0;
-  width: 27%;
+  width: 50%;
   height: 35vh;
   position: relative;
 }
 
 .showcase img {
   width: 100%;
-  height: 100%;
+  height: 50%;
   position: absolute;
   top: 83px;
   left: 0;
@@ -35,8 +34,9 @@ ul{
 }
 
 .title {
+  user-select: none;
   width: 100%;
-  height: 100%;
+  height: 50%;
   background-color: #000;
   font-size: 100px;
   color: #fff;
@@ -77,7 +77,7 @@ ul{
 .formStyle{
   display: flex;
   padding: 2em 0;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -103,12 +103,14 @@ ul{
 }
 
 .todoStyleChecked{
+  color: #FFFFFF3B;
   margin: 0 1em;
   text-align: start;
   text-decoration: line-through;
 }
 
 .inputStyle{
+  width: 70%;
   border: none;
   background-color: #000;
   border-bottom: 1px solid #ffff;
@@ -122,4 +124,19 @@ height: 3em;
 border: aliceblue 1px solid;
 background-color: #000;
 color: #fff;
+}
+
+.footerStyle{
+  padding: 1% 0;
+  width: 100%;
+  height: 5%;
+  background-color: #000;
+}
+
+.footerStyle a{
+  text-decoration: none;
+  margin: 0;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 100;
 }
